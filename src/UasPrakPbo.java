@@ -46,9 +46,8 @@ public class UasPrakPbo {
                     jb1 = Double.parseDouble(tfjb1.getText());
                     jb2 = Double.parseDouble(tfjb2.getText());
                     jb3 = Double.parseDouble(tfjb3.getText());
-//                    bayar = Double.parseDouble(tfbayar.getText());
                 }catch (Exception err){
-                    showMessageDialog(null, "This is even shorter");
+                    showMessageDialog(null, "Inputan tidak boleh kosong");
                 }
 
 //                del a
