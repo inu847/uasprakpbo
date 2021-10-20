@@ -54,9 +54,12 @@ public class UasPrakPbo {
 
             }
         });
+//        Button statement selected options
         barang1RadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+//                Statement jika radio button selected true maka hasilkan nilai masing-masing
+//                Jika salah maka setdata menjadi 0
                 if(barang1RadioButton.isSelected()){
                     tfhb1.setText("25000");
                 }else{
@@ -67,6 +70,8 @@ public class UasPrakPbo {
         barang2RadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+//                Statement jika radio button selected true maka hasilkan nilai masing-masing
+//                Jika salah maka setdata menjadi 0
                 if(barang2RadioButton.isSelected()){
                     tfhb2.setText("50000");
                 }else{
@@ -77,6 +82,8 @@ public class UasPrakPbo {
         barang3RadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+//                Statement jika radio button selected true maka hasilkan nilai masing-masing
+//                Jika salah maka setdata menjadi 0
                 if(barang3RadioButton.isSelected()){
                     tfhb3.setText("75000");
                 }else{
