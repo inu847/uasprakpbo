@@ -50,8 +50,36 @@ public class UasPrakPbo {
                     showMessageDialog(null, "Inputan tidak boleh kosong");
                 }
 
-//                del a
+                if (jb1 >= 50) {
+                    hargaTotal = vhb1 * jb1 - diskon1persen;
+                    hargaDiskon1Persen = vhb1 * diskon1persen;
+                    tfth1.setText(String.valueOf(hargaTotal));
+                    tfhbd1.setText(String.valueOf(hargaDiskon1Persen));
+                }else {
+                    hargaTotal =  vhb1 * jb1;
+                    tfth1.setText(String.valueOf(hargaTotal));
+                }
 
+                if (jb2 >= 50) {
+                    hargaTotal = vhb2 * jb2 - diskon1persen;
+                    hargaDiskon1Persen = vhb2 * diskon1persen;
+                    tfth2.setText(String.valueOf(hargaTotal));
+                    tfhbd2.setText(String.valueOf(hargaDiskon1Persen));
+                }else {
+                    hargaTotal =  vhb2 * jb2;
+                    tfth2.setText(String.valueOf(hargaTotal));
+                }
+
+                if(jb3 >= 50){
+                    hargaTotal = vhb3 * jb3 - diskon1persen;
+                    hargaDiskon1Persen = vhb3 * diskon1persen;
+                    tfth3.setText(String.valueOf(hargaTotal));
+                    tfhbd3.setText(String.valueOf(hargaDiskon1Persen));
+                }else{
+                    hargaTotal =  vhb3 * jb3;
+                    tfth3.setText(String.valueOf(hargaTotal));
+                }
+                
             }
         });
 //        Button statement selected options
