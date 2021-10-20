@@ -79,7 +79,21 @@ public class UasPrakPbo {
                     hargaTotal =  vhb3 * jb3;
                     tfth3.setText(String.valueOf(hargaTotal));
                 }
-                
+
+                double totharga1, totharga2, totharga3, totPembayaran, resultsDiskon5Persen = 0, dis5Persen = 0.05, results;
+                totharga1 = Double.parseDouble(tfth1.getText());
+                totharga2 = Double.parseDouble(tfth2.getText());
+                totharga3 = Double.parseDouble(tfth3.getText());
+                totPembayaran = totharga1 + totharga2 + totharga3;
+                tfTotalPembayaran.setText(String.valueOf(totPembayaran));
+                if (totPembayaran >= 1000000) {
+                    resultsDiskon5Persen = totPembayaran * dis5Persen;
+                    tf5Persen.setText(String.valueOf(resultsDiskon5Persen));
+                    results = totPembayaran - resultsDiskon5Persen;
+                    tfpsd.setText(String.valueOf(results));
+                }else{
+                    tfpsd.setText(String.valueOf(totPembayaran));
+                }
             }
         });
 //        Button statement selected options
